@@ -1,7 +1,7 @@
 'use strict';
 
 const { assert: {isFunction, isObject, isArray} } = require('chai')
-const {directCreateCust, directActiveCust, directPaymentOpt, directAddProduct, directCompleteOrder} = require('../lib/mainMenu')
+const {directCreateCust, directActiveCust, directPaymentOpt, directAddProduct, directCompleteOrder, directProductPop} = require('../lib/mainMenu')
 
 describe('mainMenu', () => {
   describe('directCreateCust', () => {
@@ -36,6 +36,13 @@ describe('mainMenu', () => {
     })
   })
   describe('completeOrder', () => {
-    isFunction(directCompleteOrder)
+    it('should be a function', () => {
+       isFunction(directCompleteOrder)
+    })
+  })
+  describe('productPop', () => {
+    it('should return an array', () => {
+      isArray(directProductPop())
+    })
   })
 })
