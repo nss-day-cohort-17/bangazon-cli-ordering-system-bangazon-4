@@ -8,7 +8,7 @@ describe('activeCust', () => {
     isFunction(activeCust)
   });
 
-  it('should return an object', () => {
+  it('should return and object', () => {
     isObject({})
   })
 });
