@@ -4,7 +4,7 @@
   "description": "## The Command Line Ordering System",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R list --watch"
+    "test": "mocha -R nyan --watch"
   },
   "repository": {
     "type": "git",
