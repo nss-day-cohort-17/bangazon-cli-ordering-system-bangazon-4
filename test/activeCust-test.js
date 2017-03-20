@@ -10,7 +10,9 @@ describe('activeCust', () => {
   });
 
   it('should return an array', () => {
-    isArray(getCustomer())
+    return getCustomer().then((data)=>{
+      isArray(data)
+    })
   })
     describe('getBuyer', () => {
     it('should return a function', () => {
