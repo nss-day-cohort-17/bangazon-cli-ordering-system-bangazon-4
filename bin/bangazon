@@ -1,3 +1,0 @@
-#!/user/bin/en mode
-
-require("../lib/cli")
