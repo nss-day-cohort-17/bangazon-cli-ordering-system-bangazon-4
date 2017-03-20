@@ -1,10 +1,18 @@
 'use strict';
 
-const { assert: {isFunction} } = require('chai');
-const createCust = require('../lib/createCust');
+const { isFunction, isObject, isString } = require('chai').assert;
+const {createCust} = require('../lib/createCust');
 
 describe('createCust', () => {
-  it('should be a function', () => {
+  it('that should be a function', () => {
     isFunction(createCust)
   });
+  it('from a promise', ()=> {
+    return createCust()
+    .then((data)=>{
+      let cust1 = data
+      console.log(cust1)
+      isString(cust1)
+    })
+  })
 });
