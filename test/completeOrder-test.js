@@ -1,6 +1,8 @@
 'use strict';
 
+
 const { assert: {isFunction} } = require('chai')
+
 const   { complete, notComplete} = require('../lib/completeOrder')
 
 describe('completeOrder', ()=> {
