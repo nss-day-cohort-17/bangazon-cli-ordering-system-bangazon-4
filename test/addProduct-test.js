@@ -1,13 +1,13 @@
 'use strict';
 
 const { assert: {isFunction, isObject} } = require('chai');
-const { order } = require('../lib/addProduct');
+const addProduct = require('../lib/addProduct');
 
-describe('order', () => {
+describe('addProduct', () => {
   it('should be a function', () => {
-    isFunction(order)
+    isFunction(addProduct)
   });
   it('should be an object', () => {
-    isObject(order())
+    isObject(addProduct())
   })
 });
